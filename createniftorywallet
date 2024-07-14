@@ -1,0 +1,15 @@
+
+import { NiftoryClient } from "@niftory/sdk"
+
+
+...
+
+const client =
+    new NiftoryClient({
+      environmentName: process.env.ENVIRONMENT //testnet or mainnet,
+      appId: process.env.CLIENT_ID,
+      apiKey: process.env.API_KEY,
+      clientSecret: process.env.CLIENT_SECRET,
+    })
+
+await client.createNiftoryWallet()
