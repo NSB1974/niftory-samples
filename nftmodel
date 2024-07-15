@@ -1,0 +1,21 @@
+NftModel: Attributable & BlockchainEntity & BlockchainResource & HasTimes & Identifiable & Resource & {
+    __typename?: "NFTModel";
+    attributes?: Maybe<Scalars["JSONObject"]>;
+    blockchainId?: Maybe<Scalars["String"]>;
+    content?: Maybe<NftContent>;
+    createdAt: Scalars["DateTime"];
+    description: Scalars["String"];
+    id: Scalars["ID"];
+    marketplaceListings?: Maybe<Maybe<MarketplaceListing>[]>;
+    metadata?: Maybe<Scalars["JSONObject"]>;
+    nftListings?: Maybe<Maybe<NftListing>[]>;
+    nfts?: Maybe<Maybe<Nft>[]>;
+    quantity?: Maybe<Scalars["PositiveInt"]>;
+    quantityMinted?: Maybe<Scalars["UnsignedInt"]>;
+    rarity?: Maybe<SimpleRarityLevel>;
+    set: NftSet;
+    state: NftModelBlockchainState;
+    status?: Maybe<Status>;
+    title: Scalars["String"];
+    updatedAt?: Maybe<Scalars["DateTime"]>;
+}
